@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<p>Login:</p>
+<form action="login" method="POST">
+    <table>
+        <tr>
+            <td>Username (email)</td>
+            <td>Password</td>
+        </tr>
+        <tr>
+            <td><input type="text" name="username" id="username" placeholder="email..." /></td>
+            <td><input type="password" name="password" id="password" placeholder="password..." /></td>
+        </tr>
+    </table>
+    <button type="submit">Login</button>
+    <p style="color:red;">{{ error }}</p>
+</form>
+{% endblock %}
