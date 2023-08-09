@@ -2,7 +2,13 @@
 
 ## run application local environment
 
-First activate virtual environment:
+First create virtual environment
+
+```bash
+python3 -m venv .venv
+```
+
+and then activate the virtual environment:
 ```bash
 . .venv/bin/activate
 ```
